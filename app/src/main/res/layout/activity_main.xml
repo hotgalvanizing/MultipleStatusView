@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/main_simple"
+            style="@style/MainContent"
+            android:text="简单布局1"/>
+
+        <View style="@style/CommonDivider"/>
+
+        <TextView
+            android:id="@+id/main_simple2"
+            style="@style/MainContent"
+            android:text="简单布局2"
+            />
+
+        <View style="@style/CommonDivider"/>
+
+        <TextView
+            android:id="@+id/main_custom"
+            style="@style/MainContent"
+            android:text="自定义布局"
+            />
+
+        <View style="@style/CommonDivider"/>
+
+        <TextView
+            android:id="@+id/main_list"
+            style="@style/MainContent"
+            android:text="列表展示"
+            />
+
+        <View style="@style/CommonDivider"/>
+
+        <TextView
+            android:id="@+id/main_refresh"
+            style="@style/MainContent"
+            android:text="列表 + 下拉刷新"
+            />
+
+        <View style="@style/CommonDivider"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // implementation project(':multiple-status-view')
+    implementation rootProject.ext.multipleStatusView
+    implementation rootProject.ext.supportAppcompatV7
+    implementation rootProject.ext.supportRecyclerView
+    implementation rootProject.ext.supportDesign
+    implementation rootProject.ext.loadingView
+    implementation rootProject.ext.nineoldandroids
+    implementation rootProject.ext.fab
+    implementation rootProject.ext.adapter
+    testImplementation rootProject.ext.junit
+}
